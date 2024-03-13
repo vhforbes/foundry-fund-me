@@ -34,7 +34,7 @@ contract HelperConfig is Script {
     }
 
     function getOrCreateAnvilConfig() public returns (NetworkConfig memory) {
-        // Checking to see ifmock is already deployed in the blockchain
+        // Checking to see if mock is already deployed in the blockchain
         if (activeNetworkConfig.priceFeed != address(0)) {
             return activeNetworkConfig;
         }
